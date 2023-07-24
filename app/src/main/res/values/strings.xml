@@ -1,3 +1,7 @@
 <resources>
     <string name="app_name">VirtualShop</string>
+    <string name="acitivity_main_acces">Acceder</string>
+    <string name="activity_main_sign_up">Regístrate</string>
+    <string name="activity_main_logo_cat">logo_gato</string>
+    <string name="activity_main_logo_allin">logo_allin</string>
 </resources>
