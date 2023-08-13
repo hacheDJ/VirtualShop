@@ -12,4 +12,17 @@
     <string name="activity_access_app_forgot_password">¿Olvidaste tu contraseña?</string>
     <string name="activity_access_app_with_google">Inicia sesión con tu cuenta Google</string>
     <string name="activity_access_app_access">Acceder</string>
+    <string name="apellidos">Apellidos</string>
+    <string name="nombres">Nombres</string>
+    <string name="usuario">Usuario</string>
+    <string name="direccion">Direccion</string>
+    <string name="documento">Documento</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="detUsuario">Usuario:</string>
+    <string name="detDocumento">Documento:</string>
+    <string name="detApellidos">Apellidos:</string>
+    <string name="detNombres">Nombres:</string>
+    <string name="detDireccion">Direccion:</string>
+    <string name="detCorreo">Correo:</string>
 </resources>
