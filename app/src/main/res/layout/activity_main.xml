@@ -17,7 +17,7 @@
         app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        tools:srcCompat="@drawable/logo_allin" />
+        android:src="@drawable/logo_allin" />
 
     <ImageView
         android:id="@+id/ivAllinCats"
@@ -30,7 +30,7 @@
         app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/ivAllin"
-        tools:srcCompat="@drawable/logo_img" />
+        android:src="@drawable/logo_img" />
 
     <Button
         android:id="@+id/btnAccessA1"

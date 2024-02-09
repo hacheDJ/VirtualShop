@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/tvTitleShoppingCart"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".fragments.Shopping2Fragment">
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toTopOf="@+id/rvListProductShoppingCart"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/title_shopping_fragment"
+            android:textSize="20sp"
+            android:layout_gravity="center"/>
+    </androidx.cardview.widget.CardView>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rvListProductShoppingCart"
+        android:layout_width="409dp"
+        android:layout_height="478dp"
+        android:layout_marginBottom="200dp"
+        app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:listitem="@layout/item_shopping_cart" />
+
+    <TextView
+        android:id="@+id/tvSubtotal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="50dp"
+        android:text="@string/title_subtotal"
+        app:layout_constraintEnd_toStartOf="@+id/tvValueSubtotal"
+        app:layout_constraintTop_toBottomOf="@+id/rvListProductShoppingCart" />
+
+    <TextView
+        android:id="@+id/tvIgv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="50dp"
+        android:text="@string/title_i_g_v"
+        app:layout_constraintEnd_toStartOf="@+id/tvValueIgv"
+        app:layout_constraintTop_toBottomOf="@+id/tvSubtotal" />
+
+    <TextView
+        android:id="@+id/tvTotal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="50dp"
+        android:text="@string/title_total"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toStartOf="@+id/tvValueTotal"
+        app:layout_constraintTop_toBottomOf="@+id/tvIgv" />
+
+    <TextView
+        android:id="@+id/tvValueSubtotal"
+        android:layout_width="80dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="35dp"
+        android:gravity="right"
+        android:text="@string/value_subtotal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/rvListProductShoppingCart" />
+
+    <TextView
+        android:id="@+id/tvValueIgv"
+        android:layout_width="80dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="35dp"
+        android:gravity="right"
+        android:text="@string/value_igv"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvValueSubtotal" />
+
+    <TextView
+        android:id="@+id/tvValueTotal"
+        android:layout_width="80dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="35dp"
+        android:gravity="right"
+        android:text="@string/value_total"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvValueIgv" />
+
+    <Button
+        android:id="@+id/btnConfirmPurchase"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="35dp"
+        android:layout_marginTop="35dp"
+        android:text="@string/title_delivery_preferences"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/rvListProductShoppingCart" />
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -4,4 +4,8 @@
     <color name="white">#FFFFFFFF</color>
     <color name="blue_button">#384BFC</color>
     <color name="gris_claro">#E8E4E4</color>
+    <color name="bottom_nav_color">#171c1c</color>
+    <color name="bg_cv_product_color">#f2f7f7</color>
+    <color name="yellow_color_category">#fcf9b6</color>
+    <color name="green_menu">#56bc7a</color>
 </resources>

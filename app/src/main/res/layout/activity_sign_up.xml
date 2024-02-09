@@ -23,35 +23,15 @@
         app:layout_constraintTop_toTopOf="parent" />
 
     <com.google.android.material.textfield.TextInputLayout
-        android:id="@+id/tilInsertUser"
-        android:layout_width="match_parent"
-        android:layout_height="55dp"
-        android:layout_marginHorizontal="30dp"
-        android:layout_marginTop="10dp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.5"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/tvTitle">
-
-        <com.google.android.material.textfield.TextInputEditText
-            android:id="@+id/edtInsertUser"
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:background="@color/white"
-            android:fontFamily="@font/montserrat_regular"
-            android:hint="@string/activity_sign_up_insert_user"
-            android:textSize="15sp" />
-    </com.google.android.material.textfield.TextInputLayout>
-
-    <com.google.android.material.textfield.TextInputLayout
         android:id="@+id/tilInsertName"
         android:layout_width="match_parent"
         android:layout_height="55dp"
         android:layout_marginHorizontal="30dp"
+        android:layout_marginTop="20dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/tilInsertUser">
+        app:layout_constraintTop_toBottomOf="@+id/tvTitle">
 
         <com.google.android.material.textfield.TextInputEditText
             android:id="@+id/edtInsertName"
@@ -75,6 +55,7 @@
         app:layout_constraintTop_toBottomOf="@+id/tilInsertName">
 
         <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/edtLastname"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:background="@color/white"
@@ -274,14 +255,26 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginHorizontal="30dp"
-        android:text="@string/activity_sign_up_sign_up"
+        android:layout_marginTop="20dp"
         android:backgroundTint="@color/blue_button"
         android:fontFamily="@font/montserrat_regular"
+        android:text="@string/activity_sign_up_sign_up"
         android:textSize="20sp"
         android:textStyle="bold"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/cbxConfirmTerms" />
+
+    <ProgressBar
+        android:id="@+id/pbSignup"
+        style="?android:attr/progressBarStyle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:visibility="gone"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
